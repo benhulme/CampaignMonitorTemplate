@@ -28,6 +28,7 @@
 				table[class=w360], td[class=w360], img[class=w360] { width:140px !important; }
 				table[class=w410], td[class=w410], img[class=w410] { width:180px !important; }
 				table[class=w470], td[class=w470], img[class=w470] { width:200px !important; }
+				table[class=w520], td[class=w520], img[class=w520] { width:280px !important; }
 				table[class=w580], td[class=w580], img[class=w580] { width:280px !important; }
 				table[class=w640], td[class=w640], img[class=w640] { width:300px !important; }
 				table[class=hide], td[class=hide], img[class=hide], p[class=hide], span[class=hide], .hide { display:none !important; }
@@ -42,7 +43,7 @@
 			.ExternalClass { width: 100%; display:block !important; } /* Force Hotmail to display emails at full width */
 			/* Reset Styles */
 			/* Add 100px so mobile switch bar doesn't cover street address. */
-			html, body { background-color: #E4E4E4; margin: 0; padding: 0; }
+			html, body { background-color: #eee; margin: 0; padding: 0; }
 			img { height: auto; line-height: 100%; outline: none; text-decoration: none; display: block;}
 			br, strong br, b br, em br, i br { line-height:100%; }
 			h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; }
@@ -61,19 +62,10 @@
 				word-break: break-all;
 			}
 
-			.color-gold { color: #b4975a; }
-			.color-gold-light { color: #cbb68c; }
-			.color-gray { color: #a7a9ac; }
-			.color-gray-light { color: #c2c3c5; }
-			.color-red { color: #693934; }
-			.color-red-light { color: #967571; }
-			.color-black { color: #000; }
-			.color-white { color: #fff; }
-			.color-charcoal { color: #333; }
 
-			#background-table { background-color: #E4E4E4; }
+			#background-table { background-color: #fff; }
 			/* Webkit Elements */
-			#top-bar { border-radius:6px 6px 0px 0px; -moz-border-radius: 6px 6px 0px 0px; -webkit-border-radius:6px 6px 0px 0px; -webkit-font-smoothing: antialiased; background-color: #E4E4E4; color: #cccccc; }
+			#top-bar { border-radius:6px 6px 0px 0px; -moz-border-radius: 6px 6px 0px 0px; -webkit-border-radius:6px 6px 0px 0px; -webkit-font-smoothing: antialiased; background-color: #fff; color: #333; }
 			#top-bar a { font-weight: bold; color: #444444; text-decoration: none;}
 			#footer { border-radius:0px 0px 6px 6px; -moz-border-radius: 0px 0px 6px 6px; -webkit-border-radius:0px 0px 6px 6px; -webkit-font-smoothing: antialiased; }
 			/* Fonts and Content */
@@ -84,7 +76,7 @@
 			.header-content a { font-weight: bold; color: #444444; text-decoration: none; }
 			#headline p { color: #e7cba3; font-family: Helvetica Neue, Arial, Helvetica, Geneva, sans-serif; font-size: 36px; text-align: center; margin-top:0px; margin-bottom:30px; }
 			#headline p a { color: #e7cba3; text-decoration: none; }
-			.article-title { font-size: 18px; line-height:24px; color: #444444; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
+			.article-title { font-size: 22px; line-height:24px; color: #444444; font-weight:bold; margin-top:0px; margin-bottom:18px; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
 			.article-title a { color: #444444; text-decoration: none; }
 			.article-title.with-meta {margin-bottom: 0;}
 			.article-meta { font-size: 13px; line-height: 20px; color: #ccc; font-weight: bold; margin-top: 0;}
@@ -94,7 +86,7 @@
 			.article-content ol, .article-content ul { margin-top:0px; margin-bottom:18px; margin-left:19px; padding:0; }
 			.article-content li { font-size: 13px; line-height: 18px; color: #888888; }
 			.article-content li a { color: #3CA7DD; text-decoration:underline; }
-			.article-content p {margin-bottom: 15px;}
+			.article-content p {margin-bottom: 15px;line-height:1.8;}
 			.footer-content-left { font-size: 12px; line-height: 15px; color: #A6A6A6; margin-top: 0px; margin-bottom: 15px; }
 			.footer-content-left a { color: #3CA7DD; font-weight: bold; text-decoration: none; }
 			.footer-content-right { font-size: 11px; line-height: 16px; color: #A6A6A6; margin-top: 0px; margin-bottom: 15px; }
@@ -103,6 +95,49 @@
 			#footer a { color: #3CA7DD; text-decoration: none; font-weight: bold; }
 			#permission-reminder { white-space: pre-wrap; }
 			#street-address { color: #B3B3B3; white-space: pre-wrap; }
+
+			.color-gold { color: #b4975a; }
+			.color-gold-light { color: #cbb68c; }
+			.color-gray { color: #a7a9ac; }
+			.color-gray-light { color: #c2c3c5; }
+			.color-red { color: #693934; }
+			.color-red-light { color: #967571; }
+			.color-black { color: #000; }
+			.color-white { color: #fff; }
+			.color-charcoal { color: #333; }
+
+			.divider { 
+				background: url(images/effie-awards-divider.png);
+				background-position: center;
+				height: 40px;
+			}
+			.cta-background {
+				background: url(images/effie-awards-cta-background.jpg);
+				background-position: bottom center;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				height: 470px;
+			}
+			.entries-close {
+				background: url(images/effie-awards-entries-close.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 100%;
+				height: 100px;
+			}
+			.link-container { width: 140px; }
+			.cta {
+				background: url(images/effie-awards-cta.png);
+				width: 140px;
+				height: 40px;
+			}
+			.sponsor-top, .sponsor-bottom {
+				height: 12px;
+				width: 100%;
+				background-position: center;
+			}
+			.sponsor-top { background: url(images/effie-awards-sponsor-bordertop.jpg); }
+			.sponsor-bottom { background: url(images/effie-awards-sponsor-borderbottom.jpg); }
 		</style>
 		<!--[if gte mso 9]>
 		<style _tmplitem="277" >
@@ -118,268 +153,179 @@
 		<table width="100%" cellpadding="0" cellspacing="0" border="0" id="background-table">
 			<tbody>
 				<tr>
-					<td align="center" bgcolor="#E4E4E4">
+					<td align="center" bgcolor="#fff">
 						<table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
 							<tbody>
-								<tr><td class="w640" width="640" height="20"></td></tr>    
+								<tr><td class="w640" width="640" height="20"></td></tr>
 								<tr>
 									<td class="w640" width="640">
 										<table id="top-bar" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
 											<tbody>
 												<tr>
-													<td class="w15" width="15"></td>
-													<td class="w325" width="350" valign="middle" align="left">
-														<table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
-															<tbody><tr><td class="w325" width="350" height="8"></td></tr>
-														</tbody></table>
-														<div class="header-content"><webversion>Web version</webversion><span class="hide">&nbsp;&nbsp;|&nbsp; <preferences>Update preferences</preferences>&nbsp;&nbsp;|&nbsp; <unsubscribe>Unsubscribe</unsubscribe></span></div>
-														<table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
+													<!-- <td class="w15" width="15"></td> -->
+													<td class="w30" width="30"></td>
+													<td class="w60" width="60">
+														<!-- <img editable width="125" label="Logo Image" alt="" src="images/logo-placeholder.jpg" /> -->
+														<img editable width="60" label="Logo Image" alt="" src="images/effie-awards-logo.png" />
+													</td>
+													<td class="w125" width="125"></td>
+													<td class="w360" width="360" valign="bottom" align="right">
+														<table class="w60" width="360" cellpadding="0" cellspacing="0" border="0">
 															<tbody>
-																<tr><td class="w325" width="350" height="8"></td></tr>
+																<tr><td class="w360" width="360" height="8"></td></tr>
+															</tbody>
+														</table>
+														<div class="header-content"><webversion>Web version</webversion><span class="hide">&nbsp;&nbsp;|&nbsp; <preferences>Update preferences</preferences>&nbsp;&nbsp;|&nbsp; <unsubscribe>Unsubscribe</unsubscribe></span></div>
+														<table class="w360" width="360" cellpadding="0" cellspacing="0" border="0">
+															<tbody>
+																<tr><td class="w360" width="360" height="8"></td></tr>
 															</tbody>
 														</table>
 													</td>
 													<td class="w30" width="30"></td>
-													<td class="w255" width="255" valign="middle" align="right">
-														<table class="w255" width="255" cellpadding="0" cellspacing="0" border="0">
-															<tbody>
-																<tr><td class="w255" width="255" height="8"></td></tr>					
-															</tbody>
-														</table>
-														<table cellpadding="0" cellspacing="0" border="0">
-															<tbody>
-																<tr>
-																	<td valign="middle"><fblike><img src="https://img.createsend1.com/img/templatebuilder/like-glyph.png" border="0" width="8" height="14" alt="Facebook icon"=""></fblike></td>
-																	<td width="3"></td>
-																	<td valign="middle"><div class="header-content"><fblike>Like</fblike></div></td>
-																	<td class="w10" width="10"></td>
-																	<td valign="middle"><tweet><img src="https://img.createsend1.com/img/templatebuilder/tweet-glyph.png" border="0" width="17" height="13" alt="Twitter icon"=""></tweet></td>
-																	<td width="3"></td>
-																	<td valign="middle"><div class="header-content"><tweet>Tweet</tweet></div></td>
-																	<td class="w10" width="10"></td>
-																	<td valign="middle"><forwardtoafriend><img src="https://img.createsend1.com/img/templatebuilder/forward-glyph.png" border="0" width="19" height="14" alt="Forward icon"=""></forwardtoafriend></td>
-																	<td width="3"></td>
-																	<td valign="middle"><div class="header-content"><forwardtoafriend>Forward</forwardtoafriend></div></td>
-																</tr>		
-															</tbody>
-														</table>
-														<table class="w255" width="255" cellpadding="0" cellspacing="0" border="0">
-															<tbody>
-																<tr><td class="w255" width="255" height="8"></td></tr>
-															</tbody>
-														</table>
-													</td>
-													<td class="w15" width="15"></td>
 												</tr>
 											</tbody>
 										</table>                        
 									</td>
 								</tr>
+
 								<tr>
 									<td id="header" class="w640" width="640" align="center" bgcolor="#ffffff">
-										<div align="center" style="text-align: center"><img id="customHeaderImage" src="images/header.jpg" class="w640" border="0" align="top" style="display: inline"></div>
+										<!-- <div align="center" style="text-align: center"><img id="customHeaderImage" src="images/hero-placeholder.jpg" class="w640" border="0" align="top" style="display: inline"></div> -->
+										<div align="center" style="text-align: center"><img id="customHeaderImage" src="images/effie-awards-hero-image.jpg" class="w640" border="0" align="top" style="display: inline"></div>
 									</td>
 								</tr>                
 								<tr><td class="w640" width="640" height="30" bgcolor="#ffffff"></td></tr>
-								<tr id="simple-content-row"><td class="w640" width="640" bgcolor="#ffffff">
-									<table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
-										<tbody>
-											<tr>
-												<td class="w30" width="30"></td>
-												<td class="w580" width="580">
-													<repeater>                    
-														<layout label="Text only">
-															<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-																<tbody>
-																	<tr>
-																		<td class="w580" width="580">
-																			<p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-																			<div align="left" class="article-content">
-																				<multiline label="Description">Enter your description</multiline>
-																			</div>
-																		</td>
-																	</tr>
-																<tr><td class="w580" width="580" height="10"></td></tr>
-															</tbody></table>
-														</layout>
-														<layout label="Text with full-width image">
-															<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td class="w640" width="640" align="center" bgcolor="#fff">
+										<table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+											<tbody>
+												<tr>
+													<td class="w30" width="30"></td>
+													<td class="w580" width="580">
+														<repeater>                    
+															<layout label="Main Section">
+																<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
 																	<tbody>
 																		<tr>
 																			<td class="w580" width="580">
-																				<p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-																			</td>
-																		</tr>
-																		<tr><td class="w580" width="580"><img editable="true" label="Image" class="w580" width="580" border="0"></td></tr>
-																		<tr><td class="w580" width="580" height="15"></td></tr>
-																		<tr>
-																			<td class="w580" width="580">
+																				<p align="left" class="article-title">Hi,</p>
 																				<div align="left" class="article-content">
-																					<multiline label="Description">Enter your description</multiline>
+																					<multiline label="Main EDM Copy">
+																						<p>
+																							Revered by marketers and agencies globally as the pre-eminent award for marketing effectiveness, the Effies celebrate the marketing communication that contributes to a brand’s success.
+																							<br><br>
+																							For a true Effie winner, brand health exists in both the physical and metaphysical world. By aligning the brilliant minds of agency and client, you can create a powerful, unstoppable centre of energy which allows brands to connect with New Zealanders on a deeply powerful and spiritual level.
+																							<br><br>
+																							And it is now, that the Effies are looking for the next spiritual leaders to come forth. To let their auras fill our minds with blinding strategy and our hearts with brand love. Some say it takes a lifetime of meditation to achieve enlightenment. The Effies say it takes a cracking idea and 2,500 words submitted before August 14.
+																						</p>
+																					</multiline>
 																				</div>
 																			</td>
 																		</tr>
 																		<tr><td class="w580" width="580" height="10"></td></tr>
-																</tbody>
-															</table>
-														</layout>
-														<layout label="Text with right-aligned image">
-															<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-																<tbody>
-																	<tr>
-																		<td class="w580" width="580">
-																			<p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-																			<table cellpadding="0" cellspacing="0" border="0" align="right">
-																				<tbody>
-																					<tr>
-																						<td class="w30" width="15"></td>
-																						<td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
-																					</tr>
-																					<tr>
-																						<td class="w30" width="15" height="5"></td>
-																						<td></td>
-																					</tr>
-																				</tbody>
-																			</table>
-																			<div align="left" class="article-content">
-																				<multiline label="Description">Enter your description</multiline>
-																			</div>
-																		</td>
-																	</tr>
-																	<tr><td class="w580" width="580" height="10"></td></tr>
-																</tbody>
-															</table>
-														</layout>
-														<layout label="Text with left-aligned image">
-															<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-																<tbody>
-																	<tr>
-																		<td class="w580" width="580">
-																				<p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-																				<table cellpadding="0" cellspacing="0" border="0" align="left">
-																					<tbody>
-																						<tr>
-																							<td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
-																							<td class="w30" width="15"></td>
-																						</tr>
-																						<tr>
-																							<td></td>
-																							<td class="w30" width="15" height="5"></td>
-																						</tr>
-																				</tbody>
-																			</table>
-																			<div align="left" class="article-content">
-																				<multiline label="Description">Enter your description</multiline>
-																			</div>
-																		</td>
-																	</tr>
-																	<tr><td class="w580" width="580" height="10"></td></tr>
-																</tbody>
-															</table>
-														</layout>
-														<layout label="Two columns">
-															<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-																<tbody>
-																	<tr>
-																		<td class="w275" width="275" valign="top">
-																			<table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
-																				<tbody>
-																					<tr>
-																						<td class="w275" width="275">
-																							<p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-																							<div align="left" class="article-content">
-																								<multiline label="Description">Enter your description</multiline>
-																							</div>
-																						</td>
-																					</tr>
-																					<tr><td class="w275" width="275" height="10"></td></tr>
-																				</tbody>
-																			</table>
-																		</td>
-																		<td class="w30" width="30"></td>
-																		<td class="w275" width="275" valign="top">
-																			<table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
-																				<tbody>
-																					<tr>
-																						<td class="w275" width="275">
-																							<p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-																							<div align="left" class="article-content">
-																								<multiline label="Description">Enter your description</multiline>
-																							</div>
-																						</td>
-																					</tr>
-																					<tr><td class="w275" width="275" height="10"></td></tr>
-																				</tbody>
-																			</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-														</layout>
-														<layout label="Image gallery">
-															<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-																<tbody>
-																	<tr>
-																		<td class="w180" width="180" valign="top">
-																			<table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
-																				<tbody>
-																					<tr>
-																						<td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
-																					</tr>
-																						<tr><td class="w180" width="180" height="10"></td></tr>
-																						<tr>
-																							<td class="w180" width="180">
-																								<div align="left" class="article-content">
-																									<multiline label="Description">Enter your description</multiline>
-																								</div>
-																							</td>
-																						</tr>
-																						<tr><td class="w180" width="180" height="10"></td></tr>
-																					</tbody>
-																				</table>
-																			</td>
-																			<td width="20"></td>
-																			<td class="w180" width="180" valign="top">
-																				<table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
-																					<tbody>
-																						<tr>
-																							<td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
-																						</tr>
-																						<tr><td class="w180" width="180" height="10"></td></tr>
-																							<tr>
-																							<td class="w180" width="180">
-																								<div align="left" class="article-content">
-																									<multiline label="Description">Enter your description</multiline>
-																								</div>
-																							</td>
-																						</tr>
-																						<tr><td class="w180" width="180" height="10"></td></tr>
-																					</tbody>
-																				</table>
-																			</td>
-																			<td width="20"></td>
-																			<td class="w180" width="180" valign="top">
-																				<table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
-																					<tbody>
-																						<tr>
-																							<td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
-																						</tr>
-																						<tr><td class="w180" width="180" height="10"></td></tr>
-																						<tr>
-																							<td class="w180" width="180">
-																								<div align="left" class="article-content">
-																									<multiline label="Description">Enter your description</multiline>
-																								</div>
-																							</td>
-																						</tr>
-																						<tr><td class="w180" width="180" height="10"></td></tr>
-																					</tbody>
-																				</table>
+																	</tbody>
+																</table>
+															</layout>
+
+															<table class="640"><tr><td class="divider w580" width="580"></td></tr></table>
+															
+
+															<layout label="CTA Section">
+																<table class="w580 cta-background" width="580" cellpadding="0" cellspacing="0" border="0">
+																	<tbody>
+																		<tr><td class="w580" width="580" height="30"></td></tr>
+																		<tr valign="top">
+																			<td class="w580" width="580">
+																				<div align="center" class="entries-close"></div>
+																				<div align="center" class="cta-button">
+																					<div class="link-container">
+																						<a href="">
+																							<div class="cta"></div>
+																						</a>
+																					</div>
+																				</div>
 																			</td>
 																		</tr>
 																	</tbody>
 																</table>
 															</layout>
+
+															<table class="640">
+																<tr><td class="w640" width="640" height="30"></td></tr>
+																<tr>
+																	<td class="w30" width="30"></td>
+																	<td class="divider w580" width="580"></td>
+																	<td class="w30" width="30"></td>
+																</tr>
+															</table>
+															
+															<layout label="Effies Sponsors">
+																<table class="w640" width="640">
+																	<tr><td class="w640" width="640" height="30"></td></tr>
+																	<tr><td class="sponsor-top w640" width="640"></td></tr>
+																	<tr><td class="w640" width="640" height="30"></td></tr>
+																</table>
+																<table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+																	<tbody>
+																		<td class="w20" width="20"></td>
+																		<tr>
+																			<td class="w180" width="180" valign="top">
+																				<table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
+																					<tbody>
+																						<tr><td class="w180" width="180" height="10"></td></tr>
+																						<tr>
+																							<td class="w180" width="180">
+																								<div align="center">
+																									<img src="images/sponsor-ccc.png" alt="Commercial Communications Council" />
+																								</div>
+																							</td>
+																						</tr>
+																						<tr><td class="w180" width="180" height="10"></td></tr>
+																					</tbody>
+																				</table>
+																			</td>
+																			<td width="20"></td>
+																				<td class="w180" width="180" valign="top">
+																					<table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
+																						<tbody>
+																							<tr><td class="w180" width="180" height="10"></td></tr>
+																							<tr>
+																								<td class="w180" width="180">
+																									<div align="center">
+																											<img src="images/sponsor-nzme.png" alt="NZME" />
+																									</div>
+																								</td>
+																							</tr>
+																							<tr><td class="w180" width="180" height="10"></td></tr>
+																						</tbody>
+																					</table>
+																				</td>
+																				<td width="20"></td>
+																				<td class="w180" width="180" valign="top">
+																					<table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
+																						<tbody>
+																							<tr><td class="w180" width="180" height="10"></td></tr>
+																							<tr>
+																								<td class="w180" width="180">
+																									<div align="center">
+																											<img src="images/sponsor-tvnz.png" alt="TVNZ" />
+																									</div>
+																								</td>
+																							</tr>
+																							<tr><td class="w180" width="180" height="10"></td></tr>
+																						</tbody>
+																					</table>
+																				</td>
+																			</tr>
+																			<td class="w20" width="20"></td>
+																		</tbody>
+																	</table>
+																	<table class="w640" width="640">
+																		<tr><td class="w640" width="640" height="30"></td></tr>
+																		<tr><td class="sponsor-bottom w640" width="640"></td></tr>
+																	</table>
+																</layout>
 														</repeater>
 													</td>
 													<td class="w30" width="30"></td>
@@ -388,48 +334,7 @@
 										</table>
 									</td>
 								</tr>
-								<tr><td class="w640" width="640" height="15" bgcolor="#ffffff"></td></tr>               
-								<tr>
-									<td class="w640" width="640">
-										<table id="footer" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
-											<tbody>
-												<tr>
-													<td class="w30" width="30"></td>
-													<td class="w580 h0" width="360" height="30"></td>
-													<td class="w0" width="60"></td>
-													<td class="w0" width="160"></td>
-													<td class="w30" width="30"></td>
-												</tr>
-												<tr>
-													<td class="w30" width="30"></td>
-													<td class="w580" width="360" valign="top">
-														<span class="hide">
-															<p id="permission-reminder" align="left" class="footer-content-left">
-																You&rsquo;re receiving this because you&rsquo;re an awesome ABC Widgets customer or subscribed via our site.
-															</p>
-														</span>
-														<p align="left" class="footer-content-left">
-															<preferences>Edit your subscription</preferences> | <unsubscribe>Unsubscribe instantly</unsubscribe>
-														</p>
-													</td>
-													<td class="hide w0" width="60"></td>
-													<td class="hide w0" width="160" valign="top">
-														<p id="street-address" align="right" class="footer-content-right">ABC Widgets 87 Street Avenue, California</p>
-													</td>
-													<td class="w30" width="30"></td>
-												</tr>
-												<tr>
-													<td class="w30" width="30"></td>
-													<td class="w580 h0" width="360" height="15"></td>
-													<td class="w0" width="60"></td>
-													<td class="w0" width="160"></td>
-													<td class="w30" width="30"></td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>								
-								<tr><td class="w640" width="640" height="60"></td></tr>
+								<tr><td class="w640" width="640" height="15" bgcolor="#ffffff"></td></tr>
 							</tbody>
 						</table>
 					</td>
